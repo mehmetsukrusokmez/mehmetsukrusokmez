@@ -2,17 +2,19 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Mehmet+bir+şeyler+deniyor...+Önerileriniz+için+hit+me+up!)](https://git.io/typing-svg)
-
-</div>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&lines=Mehmet+bir+%C5%9Feyler+deniyor...+%C3%96nerileriniz+i%C3%A7in+hit+me+up!)](https://git.io/typing-svg)
 
 <br>
 
-<div align="center">
-
 <!-- WEATHER_START -->
-<img src="https://wttr.in/Ankara.png" alt="Ankara Hava Durumu" />
+![Ankara Hava Durumu](https://img.shields.io/badge/📍_Ankara-bilinmiyor-4f8ef7?style=for-the-badge&logo=icloud&logoColor=white)
 <!-- WEATHER_END -->
+
+<br><br>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mehmetsukru/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/msukrusokmez)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aryasstark55@gmail.com)
 
 </div>
 

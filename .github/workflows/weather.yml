@@ -2,7 +2,7 @@ name: Update Ankara Weather
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Her 6 saatte bir güncelle
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -14,15 +14,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Hava durumunu çek
-        id: weather
+      - name: Hava durumunu çek ve README güncelle
         run: |
-          WEATHER=$(curl -s "https://wttr.in/Ankara?format=%C+·+%t" | tr -d '\n')
-          echo "data=$WEATHER" >> $GITHUB_OUTPUT
+          python3 << 'EOF'
+          import urllib.request
+          import urllib.parse
+          import re
 
-      - name: README güncelle
-        run: |
-          sed -i 's|<img src="https://wttr.in/Ankara.png.*|<img src="https://wttr.in/Ankara.png?'"$(date +%s)"'" alt="Ankara Hava Durumu" />|' README.md
+          temp = urllib.request.urlopen("https://wttr.in/Ankara?format=%t").read().decode().strip().replace("+", "").replace(" ", "")
+          cond = urllib.request.urlopen("https://wttr.in/Ankara?format=%C").read().decode().strip()
+          label = urllib.parse.quote(f"{temp} · {cond}", safe="")
+
+          with open("README.md", "r") as f:
+              content = f.read()
+
+          content = re.sub(
+              r'!\[Ankara Hava Durumu\]\(https://img\.shields\.io/badge/📍_Ankara-[^)]+\)',
+              f'![Ankara Hava Durumu](https://img.shields.io/badge/📍_Ankara-{label}-4f8ef7?style=for-the-badge&logo=icloud&logoColor=white)',
+              content
+          )
+
+          with open("README.md", "w") as f:
+              f.write(content)
+
+          print(f"Hava durumu güncellendi: {temp} · {cond}")
+          EOF
 
       - name: Commit
         run: |
