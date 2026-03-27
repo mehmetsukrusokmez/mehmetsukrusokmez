@@ -9,7 +9,7 @@
 <br>
 
 <!-- WEATHER_START -->
-🌤️ **Ankara:** —
+🌤️ **Ankara:** Sunny · +12°C
 <!-- WEATHER_END -->
 
 <br>
