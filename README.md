@@ -8,9 +8,13 @@
 
 <br>
 
+<div align="center">
+
 <!-- WEATHER_START -->
-🌤️ **Ankara:** Sunny · +12°C
+<img src="https://wttr.in/Ankara.png" alt="Ankara Hava Durumu" />
 <!-- WEATHER_END -->
+
+</div>
 
 <br>
 

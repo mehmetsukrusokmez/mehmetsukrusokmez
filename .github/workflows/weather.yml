@@ -22,8 +22,7 @@ jobs:
 
       - name: README güncelle
         run: |
-          WEATHER="${{ steps.weather.outputs.data }}"
-          sed -i "s|🌤️ \*\*Ankara:\*\*.*|🌤️ **Ankara:** $WEATHER|" README.md
+          sed -i 's|<img src="https://wttr.in/Ankara.png.*|<img src="https://wttr.in/Ankara.png?'"$(date +%s)"'" alt="Ankara Hava Durumu" />|' README.md
 
       - name: Commit
         run: |
