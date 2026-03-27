@@ -29,8 +29,8 @@ jobs:
               content = f.read()
 
           content = re.sub(
-              r'!\[Ankara Hava Durumu\]\(https://img\.shields\.io/badge/📍_Ankara-[^)]+\)',
-              f'![Ankara Hava Durumu](https://img.shields.io/badge/📍_Ankara-{label}-4f8ef7?style=for-the-badge&logo=icloud&logoColor=white)',
+              r'<img src="https://img\.shields\.io/badge/📍_Ankara-[^"]+\" width="780"[^/]*/?>',
+              f'<img src="https://img.shields.io/badge/📍_Ankara-{label}-4f8ef7?style=for-the-badge&logo=icloud&logoColor=white" width="780" alt="Ankara Hava Durumu" />',
               content
           )
 

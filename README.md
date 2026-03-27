@@ -7,7 +7,7 @@
 <br>
 
 <!-- WEATHER_START -->
-![Ankara Hava Durumu](https://img.shields.io/badge/📍_Ankara-12%C2%B0C%20%C2%B7%20Sunny-4f8ef7?style=for-the-badge&logo=icloud&logoColor=white)
+<img src="https://img.shields.io/badge/📍_Ankara-12%C2%B0C%20%C2%B7%20Sunny-4f8ef7?style=for-the-badge&logo=icloud&logoColor=white" width="780" alt="Ankara Hava Durumu" />
 <!-- WEATHER_END -->
 
 <br><br>
