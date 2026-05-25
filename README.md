@@ -7,7 +7,7 @@
 <br>
 
 <!-- WEATHER_START -->
-<img src="https://img.shields.io/badge/📍_Ankara-63%C2%B0F%20%C2%B7%20Partly%20cloudy-4f8ef7?style=for-the-badge&logo=icloud&logoColor=white" width="780" alt="Ankara Hava Durumu" />
+<img src="https://img.shields.io/badge/📍_Ankara-58%C2%B0F%20%C2%B7%20Patchy%20rain%20nearby-4f8ef7?style=for-the-badge&logo=icloud&logoColor=white" width="780" alt="Ankara Hava Durumu" />
 <!-- WEATHER_END -->
 
 <br><br>
